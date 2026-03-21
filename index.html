@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polyspectre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <img src="assets/spectre.png" alt="Polyspectre Logo" class="logo">
+      <h1>Polyspectre</h1>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h2>A global network of low-cost, narrowband FFT spectrometers for solar radio observations.</h2>
+    </section>
+    <section id="gallery" class="gallery-section">
+      <div class="spectrogram-carousel">
+        <button class="carousel-btn" id="prev-btn" aria-label="Previous spectrogram">&#8592;</button>
+        <div class="carousel-window">
+          <img src="assets/spectrogram_1.png" alt="Spectrogram 1" class="spectrogram-img" id="spectrogram-img">
+        </div>
+        <button class="carousel-btn" id="next-btn" aria-label="Next spectrogram">&#8594;</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <span>Contact: <a href="mailto:jimmy@polyspectre.org">jimmy@polyspectre.org</a></span>
+  </footer>
+  
+  
+  
+  <script>
+    const images = [
+      'assets/spectrogram_1.png',
+      'assets/spectrogram_2.png',
+      'assets/spectrogram_3.png',
+      'assets/spectrogram_4.png'
+    ];
+    let idx = 0;
+    const img = document.getElementById('spectrogram-img');
+    document.getElementById('prev-btn').onclick = () => {
+      idx = (idx - 1 + images.length) % images.length;
+      img.src = images[idx];
+      img.alt = `Spectrogram ${idx + 1}`;
+    };
+    document.getElementById('next-btn').onclick = () => {
+      idx = (idx + 1) % images.length;
+      img.src = images[idx];
+      img.alt = `Spectrogram ${idx + 1}`;
+    };
+  </script>
+</body>
+</html>

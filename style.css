@@ -1,0 +1,185 @@
+/* Polyspectre minimal site CSS (ultra concise) */
+:root { --accent: #fff; --accent-dark: #e0e0e0; }
+body { background: #0e1013; color: #e0e0e0; font-family: 'Inter', 'Segoe UI', Arial, sans-serif; margin: 0; min-height: 100vh; font-size: 2.7rem; }
+.info-banner { width: 100vw; background: #ffb300; color: #181a20; font: 700 2.1rem 'Inter', 'Segoe UI', Arial, sans-serif; text-align: center; padding: 1.1rem 0 1rem; letter-spacing: 0.04em; box-shadow: 0 2px 16px #0004; z-index: 100; margin-bottom: 0.5rem; }
+.banner { width: 100vw; background: rgba(24,26,32,0.98); box-shadow: 0 2px 24px #000a; padding: 0.5rem 0; margin-bottom: 2.5rem; display: flex; justify-content: center; align-items: center; position: relative; z-index: 10; }
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+.main-nav {
+  display: flex;
+  gap: 2.2rem;
+  margin-left: auto;
+}
+.main-nav a {
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  padding: 0.2rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav a:hover, .main-nav a:focus {
+  background: #23242a;
+  color: #fff;
+}
+.banner .logo {
+  width: 90px;
+  height: 90px;
+  min-width: 90px;
+  min-height: 90px;
+  margin-bottom: 0;
+  margin-right: 1.2rem;
+  box-shadow: 0 0 16px #0008;
+}
+.banner h1 { font: normal 4rem 'VT323', 'Courier New', Courier, monospace; margin: 0; color: #fff; text-shadow: 0 2px 16px #fff2; letter-spacing: 0.04em; }
+.container { width: 96vw; max-width: 1600px; margin: 3vh auto 0; padding: 3rem 3vw 7rem 3vw; background: rgba(24,26,32,0.92); border-radius: 32px; box-shadow: 0 4px 32px #000a, 0 1.5px 0 #2e2e38; display: flex; flex-direction: column; align-items: center; border: 4px solid #23242a; }
+.hero {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding: 2.5rem 0 2rem;
+}
+.hero h2 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.hero-lead {
+  font-size: 1.5rem;
+  color: #b0b8c0;
+  margin-bottom: 2.2rem;
+}
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #23242a 0%, #0e1013 100%);
+  color: #fff;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 8px;
+  border: 2px solid #23242a;
+  text-decoration: none;
+  box-shadow: 0 2px 12px #0006;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.cta-btn:hover, .cta-btn:focus {
+  background: #fff;
+  color: #181a20;
+  border: 2px solid #fff;
+}
+.about-section, .features-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 3.5rem auto;
+  background: rgba(24,26,32,0.98);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #0004;
+  padding: 2.2rem 2.5rem 1.7rem 2.5rem;
+  border: 1.5px solid #23242a;
+}
+.about-section h3, .features-section h3 {
+  font-size: 2.1rem;
+  color: #fff;
+  margin-bottom: 1.1rem;
+}
+.about-section p, .features-section ul {
+  font-size: 1.2rem;
+  color: #b0b8c0;
+}
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem 2.5rem;
+}
+.features-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.features-list li:before {
+  content: '\2022';
+  color: #ffb300;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  top: 0.1rem;
+}
+.gallery-section {
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 3.5rem auto;
+  width: 100%;
+  max-width: 900px;
+}
+.logo { width: 120px; max-width: 40vw; margin-bottom: 1.5rem; border-radius: 50%; background: rgba(14,16,19,0.7); box-shadow: 0 0 32px #000a, 0 0 0 6px #181a20; filter: drop-shadow(0 0 24px #0008); border: 2px solid #23242a; object-fit: cover; }
+h1, h2, h3 { font-family: 'VT323', 'Courier New', Courier, monospace; letter-spacing: 0.04em; font-weight: normal; }
+h1 { font-size: 4rem; font-weight: 700; margin: 0 0 0.5rem; color: #fff; text-shadow: 0 2px 16px #fff2; text-align: center; }
+h2 { font-size: 3rem; font-weight: 400; color: #e0e0e0; margin: 0 0 2.5rem; text-align: center; }
+h3 { font-size: 2rem; color: #fff; margin-bottom: 0.3rem; font-weight: 600; }
+a { color: #fff; text-decoration: underline; transition: color 0.2s; }
+a:hover { color: #b0b8c0; }
+footer { margin-top: 2rem; font-size: 1.1rem; color: #888; text-align: center; font-family: 'VT323', 'Courier New', Courier, monospace; letter-spacing: 0.04em; }
+.site-footer {
+  width: 100vw;
+  background: #181a20;
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  padding: 1.2rem 0 1.1rem;
+  margin: 0;
+  border-top: 2px solid #23242a;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
+  letter-spacing: 0.04em;
+  box-shadow: 0 -2px 16px #000a;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-footer a:hover {
+  color: #b0b8c0;
+}
+.spectrogram-carousel { display: flex; align-items: center; justify-content: center; gap: 2.5rem; margin: 2.5rem 0 2rem; width: 90vw; max-width: 1400px; }
+.carousel-window { width: 900px; max-width: 90vw; height: 340px; background: #181a20; border-radius: 18px; box-shadow: 0 2px 16px #fff2; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.spectrogram-img { width: 900px; height: 340px; max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 12px; transition: opacity 0.2s; }
+.carousel-btn { background: #101217; color: #fff; border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 1.5rem; cursor: pointer; box-shadow: 0 2px 8px #fff2; transition: background 0.2s, color 0.2s; }
+.carousel-btn:hover, .carousel-btn:focus { background: #fff; color: #101217; outline: none; }
+@media (max-width: 700px) {
+  .banner-content { gap: 0.6rem; flex-direction: column; align-items: flex-start; }
+  .main-nav { gap: 1rem; font-size: 1rem; margin-left: 0; }
+  .banner .logo { width: 38px; height: 38px; min-width: 38px; min-height: 38px; }
+  .banner h1 { font-size: 1.3rem; }
+  .banner { margin-bottom: 1.2rem; padding: 0.3rem 0; }
+  .container { max-width: 98vw; padding: 0.7rem; border-radius: 8px; }
+  .logo { width: 70px; max-width: 60vw; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.08rem; }
+  .hero h2 { font-size: 1.2rem; }
+  .hero-lead { font-size: 1rem; }
+  .cta-btn { font-size: 1rem; padding: 0.5rem 1.2rem; }
+  .about-section, .features-section, .gallery-section, .contact-section { padding: 0.7rem 0.7rem 0.5rem 0.7rem; border-radius: 6px; }
+  .features-list { grid-template-columns: 1fr; gap: 0.7rem 0; }
+  .spectrogram-carousel { gap: 0.5rem; margin: 1.2rem 0 1rem; }
+  .carousel-window { width: 98vw; max-width: 98vw; height: 120px; border-radius: 6px; }
+  .spectrogram-img { width: 98vw; height: 120px; max-width: 100%; max-height: 100%; object-fit: cover; }
+  .carousel-btn { width: 32px; height: 32px; font-size: 1.1rem; }
+  footer { font-size: 1rem; }
+}
